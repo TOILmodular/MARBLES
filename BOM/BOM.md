@@ -38,7 +38,7 @@
 | Op Amp | TL074 | 1 | |
 | Op Amp | LM324 | 1 | |
 | Op Amp | MCP6004 | 2 | |
-| Op Amp | OPA4272 | 1 | SMD (14-SOIC) |
+| Op Amp | OPA4171 | 1 | SMD (14-SOIC) |
 | DAC | DAC8164 | 1 | SMD (16-TSSOP) |
 | Microcontroller | STM32F405RGT6 or STM32F405RGT7 | 1 | SMD (LQFP64) |
 | Voltage Regulator | LD2981ABU33 | 1 | SMD (SOT-89-3) |
