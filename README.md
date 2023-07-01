@@ -16,7 +16,7 @@ However, since most DIY projects for Eurorack modules out there are using potent
 
 <img width="300" alt="Marbles_CtrlBoardPCB_Thonk" src="https://github.com/TOILmodular/MARBLES/assets/97026614/3ab0e54d-33cf-4dd3-9738-83ef58379b9f">
 
-The layout of the main PCB is sligthly different for each version. I needed to move the gate and cv output LED locations, due to the different shape of the jack sockets. Please make sure to use the right control and main board PCBs.
+The layout of the main PCB is sligthly different for each version. I needed to move the gate and CV output LED locations, due to the different shape of the jack sockets. Please make sure to use the right control and main board PCBs.
 
 <img width="300" alt="Marbles_MainBoardPCB" src="https://github.com/TOILmodular/MARBLES/assets/97026614/2f680753-b9bb-47d0-bcfd-9a101fb4d7d5">
 
