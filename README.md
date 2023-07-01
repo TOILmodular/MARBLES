@@ -109,7 +109,7 @@ IMPORTANT!!! Do not forget to put an "***f***" at the end of each of those value
 
 Example (green part are the added lines):
 
-<img width="300" src="https://github.com/TOILmodular/MARBLES/assets/97026614/64ae85d1-6759-4c9e-8ef5-706cb5f0fb24">
+<img width="300" src="https://github.com/TOILmodular/MARBLES/assets/97026614/9852c6d0-8c07-48d2-b2e3-7af8f8d56e8b">
 
 ### ADC Calibration
 1. Disconnect all cables and long-press the buttons for the Clock Range (button B) and the CV Range (button J).
