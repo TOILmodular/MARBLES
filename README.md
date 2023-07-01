@@ -89,11 +89,11 @@ Example for X2 output:
 ### Adjusting the Source Code
 Open the file "settings.cc" of the Marbles source code with a standard text editor and add the following 2 lines for each of the 4 CV outputs at line 179 of the file:
 
-***persistent_data_.calibration_data.dac_offset[xxx] = < OFFSET >f;***
+***persistent_data_.calibration_data.dac_offset[< X >] = < OFFSET >f;***
 
-***persistent_data_.calibration_data.dac_scale[xxx] = < SCALE >f;***
+***persistent_data_.calibration_data.dac_scale[< X >] = < SCALE >f;***
 
-Replace ***xxx*** by the following values for each of the CV outputs:
+Replace ***< X >*** by the following values for each of the CV outputs:
 
 ***0*** for Y
 
