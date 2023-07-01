@@ -23,7 +23,7 @@ The layout of the main PCB is sligthly different for each version. I needed to m
 I created the Gerber files with the online tool EasyEDA and ordered it at JLCPCB.
 
 ## Panel Layout
-I added the information about hole coordinates for the front panel in the folder PanelLayout, referring to the component layout in the Gerber files. Note that the layout is different for the two PCB versions, due to the LED position differences. Details are explained in the file.
+I added the information about hole coordinates for the front panel in the folder PanelLayout, referring to the component layout in the Gerber files. Note that the layout is different for the two PCB versions, due to the LED position differences. Details are explained in the layout description.
 
 ## Additional Information about specific Components
 There are several SMD components, which I listed below. 
