@@ -66,32 +66,34 @@ Furthermore, for calibrating Marbles you will need a high-precision multimeter. 
 5. Turn the "Steps" button fully clockwise.
 6. Connect the multimeter to CV output X1.
 7. Observe the output voltage, while turning the X-side "Bias" knob, until you are as close to 1V as possible (typically a value between 0.9V and 1V).
-8. Write down the exact voltage measured. Let's call it 1VX1 (1V for output X1). Ideally, that would be a value with 4 digits.
-9. Repeat steps 7 and 8 for 3V. Let's call that measured value 3VX1 (3V for output X1).
-10. Repeat steps 7 to 9 for X2 and V3, so you get values 1VX2, 3VX2, 1VX3, 3VX3.
+8. Write down the exact voltage measured. Let's call it X11V (1V for output X1). Ideally, that would be a value with 4 digits.
+9. Repeat steps 7 and 8 for 3V. Let's call that measured value X13V (3V for output X1).
+10. Repeat steps 7 to 9 for X2 and V3, so you get values X21V, X23V, X31V, X33V.
 11. For measuring the Y output, keep pressing the X mode button N, while turning the "Spread" knob fully counter-clockwise and the "Steps" knob fully clockwise. Adjust the "Rate" knob to stabilize the CV output value to around 1V, like in step 7. Write down the CV value. Let's call it 1VY.
 12. Repeat step 11 with 3V. Let's call that value 3VY.
-13. You now should have a list of 8 values for 1VX1, 3VX1, 1VX2, 3VX2, 1VX3. 3VX3, 1VY, 3VY.
+13. You now should have a list of 8 values for X11V, X13V, X21V, X23V, X31V. X33V, Y1V, Y3V.
 
 ### Calculating Offset and Scale
 Mutable Instruments provides a script for calculating offset and scale values for each of the 4 output channels, which will have to be added into the source code. If you are not familiar with using such a script (like I was), you can also easily do a manual calculation by using the formulas, given below. You need to calculate a SCALE and OFFSET value for each of the 4 CV outpus (X1, X2, X3, and Y). The variables V1 and V3 are those measured in the previous steps.
 
-***SCALE = -12426 / (V3-V1)***
+***SCALE_XY = -12426 / (XYV3-XYV1)***
 
-***OFFSET = 26555 - V1*SCALE***
+***OFFSET_XY = 26555 - XYV1*SCALE_XY***
+
+***XY*** stands for the different CV outputs X1, X2, X3, and Y.
 
 Example for X2 output:
 
-***SCALE = -12426 / (3VX2 - 1VX2)***
+***SCALE_X2 = -12426 / (X23V - X21V)***
 
-***OFFSET = 26555 - 1VX2*SCALE***
+***OFFSET_X2 = 26555 - X21V*SCALE***
 
 ### Adjusting the Source Code
 Open the file "settings.cc" of the Marbles source code with a standard text editor and add the following 2 lines for each of the 4 CV outputs at line 179 of the file:
 
-***persistent_data_.calibration_data.dac_offset[< X >] = < OFFSET >f;***
+***persistent_data_.calibration_data.dac_offset[< X >] = < OFFSET_XY >f;***
 
-***persistent_data_.calibration_data.dac_scale[< X >] = < SCALE >f;***
+***persistent_data_.calibration_data.dac_scale[< X >] = < SCALE_XY >f;***
 
 Replace ***< X >*** by the following values for each of the CV outputs:
 
@@ -103,7 +105,7 @@ Replace ***< X >*** by the following values for each of the CV outputs:
 
 3 for X3
 
-***< OFFSET >*** and ***< SCALE >*** need to be replaced by the calculated values for each CV output.
+***< OFFSET_XY >*** and ***< SCALE_XY >*** need to be replaced by the calculated values for each CV output.
 
 IMPORTANT!!! Do not forget to put an "***f***" at the end of each of those values!
 
