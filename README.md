@@ -76,7 +76,7 @@ Furthermore, for calibrating Marbles you will need a high-precision multimeter. 
 ### Calculating Offset and Scale
 Mutable Instruments provides a script for calculating offset and scale values for each of the 4 output channels, which will have to be added into the source code. If you are not familiar with using such a script (like I was), you can also easily do a manual calculation by using the formulas, given below. You need to calculate a SCALE and OFFSET value for each of the 4 CV outpus (X1, X2, X3, and Y). The variables V1 and V3 are those measured in the previous steps.
 
-***SCALE_XY = -12426 / (XYV3-XYV1)***
+***SCALE_XY = -12426 / (XYV3 - XYV1)***
 
 ***OFFSET_XY = 26555 - XYV1*SCALE_XY***
 
