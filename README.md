@@ -12,7 +12,7 @@ There are two different versions for the control board, an "original" and a "Tho
 
 <img width="300" alt="Marbles_CtrlBoardPCB_Orig" src="https://github.com/TOILmodular/MARBLES/assets/97026614/6c3a6cba-d98a-4723-a0a5-a77be741c8ad">
 
-However, since most DIY projects for Eurorack modules out there are using potentiometers from ALPHA and so-called THONKICONN jacks, as they are provided by Thonk in the UK, I also created another control board PCB for the versions "Thonk" with footprints for those components.
+However, since most DIY projects for Eurorack modules out there are using potentiometers from ALPHA and so-called THONKICONN jacks, as they are provided by Thonk in the UK, I also created another control board PCB for the version "Thonk" with footprints for those components.
 
 <img width="300" alt="Marbles_CtrlBoardPCB_Thonk" src="https://github.com/TOILmodular/MARBLES/assets/97026614/3ab0e54d-33cf-4dd3-9738-83ef58379b9f">
 
