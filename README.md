@@ -113,7 +113,7 @@ Example (green part are the added lines):
 
 ### ADC Calibration
 1. Disconnect all cables and long-press the buttons for the Clock Range (button B) and the CV Range (button J).
-2. Input 1V (e.g. from a calibrated keyboard) into the Spread CV jack.
+2. Input 1V (e.g. from a calibrated keyboard) into the Spread CV.
 3. Press  one of the 2 buttons B or J.
-4. Input 3V into the Spread CV jack.
+4. Input 3V into the Spread CV.
 5. Press the button again. 
