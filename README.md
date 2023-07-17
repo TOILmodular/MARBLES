@@ -49,7 +49,7 @@ Besides that, there are two connection points for putting the chip into boot mod
 
 <img width="300" src="https://github.com/TOILmodular/MARBLES/assets/97026614/5aa7d427-7079-4ae4-b69d-208d0d85aa70">
 
-If you want to see more about the chip programming process, you can check out [this YouTube video](xxx).
+If you want to see more about the chip programming process, you can check out [this YouTube video](https://youtu.be/9D4ZEAn3BBg) for my Plaits DIY clone, as the procedure is the same.
 
 ## Calibration
 Calibrating Marbles is more complex than the process for other Mutable Instruments modules. It requires to adjust and recompile the source code. That is the reason, why I did not provide the compiled .hex files for this module here, as I did for other Mutable Instruments clones.
@@ -58,27 +58,34 @@ As stated above, for the compiling options, either check the [Mutable Instrument
 
 Furthermore, for calibrating Marbles you will need a high-precision multimeter. Mutable Instruments recommends a device capable of 50,000 counts. I used a 40,000 count device.
 
-### Measuring CV Outputs
+The below procedure is also demonstrated in my [YouTube video](xxx).
+
+### Measuring X1-X3 CV Outputs
 1. Set the voltage range (button J in the MI manual) to +5V (orange LED).
-2. Set the T mode (button E) to "coin toss" (green LED).
-3. Set the X mode (button N) to "control panel settings for all channels" (green LED).
-4. Turn the "Spread" knob fully counter-clockwise.
-5. Turn the "Steps" button fully clockwise.
-6. Connect the multimeter to CV output X1.
-7. Observe the output voltage, while turning the X-side "Bias" knob, until you are as close to 1V as possible (typically a value between 0.9V and 1V).
-8. Write down the exact voltage measured. Let's call it X11V (1V for output X1). Ideally, that would be a value with 4 digits.
-9. Repeat steps 7 and 8 for 3V. Let's call that measured value X13V (3V for output X1).
-10. Repeat steps 7 to 9 for X2 and V3, so you get values X21V, X23V, X31V, X33V.
-11. For measuring the Y output, keep pressing the X mode button N, while turning the "Spread" knob fully counter-clockwise and the "Steps" knob fully clockwise. Adjust the "Rate" knob to stabilize the CV output value to around 1V, like in step 7. Write down the CV value. Let's call it 1VY.
-12. Repeat step 11 with 3V. Let's call that value 3VY.
-13. You now should have a list of 8 values for X11V, X13V, X21V, X23V, X31V. X33V, Y1V, Y3V.
+2. Set the X mode (button N) to "control panel settings for all channels" (green LED).
+3. Turn the "Spread" knob fully counter-clockwise to keep the CV output signals constant.
+4. Turn the "Steps" button fully clockwise to set the quantization to octaves.
+5. Connect the multimeter to CV output X1.
+6. Observe the output voltage, while turning the X-side "Bias" knob, until you are as close to 1V as possible (typically a value between 0.9V and 1V).
+7. Write down the exact voltage measured. Let's call it X11V (1V for output X1). Ideally, that would be a value with 4 digits.
+8. Repeat steps 7 and 8 for 3V. Let's call that measured value X13V (3V for output X1).
+9. Repeat steps 7 to 9 for X2 and V3, so you get values X21V, X23V, X31V, X33V.
+
+### Measuring Y CV Output
+1. Keep pressing the X mode button (N), while turning the "Spread" knob fully counter-clockwise.
+2. Keep pressing the X mode button (N), while turning the "Steps" knob fully clockwise. 
+3. Move the "Bias" knob of the X generator side to set the Y CV output as close to 1V, as possible (typically a value between 0.9V and 1V). Play around with the "Rate" knob to change and then stabilize the Y CV output.
+4. Write down the CV value. Let's call it 1VY.
+5. Repeat steps 3 and 4 with 3V. Let's call that value 3VY.
+
+You now should have a list of 8 values for X11V, X13V, X21V, X23V, X31V. X33V, Y1V, Y3V.
 
 ### Calculating Offset and Scale
-Mutable Instruments provides a script for calculating offset and scale values for each of the 4 output channels, which will have to be added into the source code. If you are not familiar with using such a script (like I was), you can also easily do a manual calculation by using the formulas, given below. You need to calculate a ***SCALE*** and ***OFFSET*** value for each of the 4 CV outputs (X1, X2, X3, and Y). The variables ***XYV1*** and ***XYV3*** are those measured in the previous steps. ***XY*** stands for the different CV outputs X1, X2, X3, and Y.
+Mutable Instruments provides a script for calculating offset and scale values for each of the 4 output channels, which will have to be added into the source code. If you are not familiar with using such a script (like I was), you can also easily do a manual calculation by using the formulas, given below. You need to calculate a ***SCALE*** and ***OFFSET*** value for each of the 4 CV outputs (X1, X2, X3, and Y). The variables ***XY1V*** and ***XY3V*** are those measured in the previous steps. ***XY*** stands for the different CV outputs X1, X2, X3, and Y.
 
-***SCALE_XY = -12426 / (XYV3 - XYV1)***
+***SCALE_XY = -12426 / (XY3V - XY1V)***
 
-***OFFSET_XY = 26555 - XYV1 * SCALE_XY***
+***OFFSET_XY = 26555 - XY1V * SCALE_XY***
 
 Example for X2 output:
 
