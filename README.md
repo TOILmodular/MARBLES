@@ -81,7 +81,9 @@ The below procedure is also demonstrated in my [YouTube video](xxx).
 You now should have a list of 8 values for X11V, X13V, X21V, X23V, X31V. X33V, Y1V, Y3V.
 
 ### Calculating Offset and Scale
-Mutable Instruments provides a script for calculating offset and scale values for each of the 4 output channels, which will have to be added into the source code. If you are not familiar with using such a script (like I was), you can also easily do a manual calculation by using the formulas, given below. You need to calculate a ***SCALE*** and ***OFFSET*** value for each of the 4 CV outputs (X1, X2, X3, and Y). The variables ***XY1V*** and ***XY3V*** are those measured in the previous steps. ***XY*** stands for the different CV outputs X1, X2, X3, and Y.
+Mutable Instruments provided a linkto a Jupyter Notebook script in their [Marbles documentation](https://pichenettes.github.io/mutable-instruments-documentation/modules/marbles/open_source/) for calculating offset and scale values for each of the 4 output channels, which will have to be added into the source code. You will need to logon to a Google account for executing that script. 
+
+Alternatively, you can also do a manual calculation by using the formulas, given below. You need to calculate a ***SCALE*** and ***OFFSET*** value for each of the 4 CV outputs (X1, X2, X3, and Y). The variables ***XY1V*** and ***XY3V*** are those measured in the previous steps. ***XY*** stands for the different CV outputs X1, X2, X3, and Y.
 
 ***SCALE_XY = -12426 / (XY3V - XY1V)***
 
