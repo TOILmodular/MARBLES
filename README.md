@@ -40,8 +40,10 @@ There are several SMD components, which I listed below.
 
 Concerning the resistor size, I am usually using small-size resistors, about half the length of the usual size, so they need less space on the PCB. If you want to use my Gerber files, you have to consider that fact. You might still use normal size resistors and put them in a standing position on the boards. Should also work fine.
 
-## Programming
-For programming the miroprocessor, you first have to create the bootloader and main .hex files. I did not provide those files here, as the module calibration process requires an adjustment and recompiling of the source code, as described in the calibration section below. For compiling the source code, you can either follow the procedure provided by Mutable Instruments in their [documentation](https://pichenettes.github.io/mutable-instruments-documentation/modules/marbles/open_source/), or you can refer to the method I used in [my other repository](https://github.com/TOILmodular/MI_FIRMWARE_COMPILING). However, I only used that method with a MAC OS. I do not know, if it also works with Windows or Linux.
+## Firmware and Programming
+For programming the miroprocessor, I added the bootloader and main .hex files in the folder Firmware. The module calibration process requires an adjustment and recompiling of the main source code, as described in the calibration section below. Please also check the ReadMe file in the folder Firmware.
+
+For compiling the source code, you can either follow the procedure provided by Mutable Instruments in their [documentation](https://pichenettes.github.io/mutable-instruments-documentation/modules/marbles/open_source/), or you can refer to the method I used in [my other repository](https://github.com/TOILmodular/MI_FIRMWARE_COMPILING). However, I only used that method with a MAC OS. I do not know, if it also works with Windows or Linux.
 
 The main PCB contains connection points for both connector types for programming STM32 chips, JTAG and UART. Those can be used for standard pins with 2.54mm distance. Depending on the available connector, you only need one of those two connection point groups. However, I only tested the UART connection. The JTAG connection points have been added to the PCB by following the Mutable Instruments original design.
 
