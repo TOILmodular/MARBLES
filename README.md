@@ -1,24 +1,24 @@
 # MARBLES - Random Sampler
 A clone of the Mutable Instruments Marbles module.
 
-<img height="500" src="https://github.com/TOILmodular/MARBLES/assets/97026614/6edd362d-fb83-419a-8527-d6d1daaf35c3">
-<img height="500" src="https://github.com/TOILmodular/MARBLES/assets/97026614/9f980cb6-fa84-4b9d-8dcd-b115dbb0f78a">
+<img height="500" src="https://github.com/TOILmodular/MARBLES/assets/97026614/82fb32af-2d25-4a50-a6ca-b1fbbde70a2b">
+<img height="500" src="https://github.com/TOILmodular/MARBLES/assets/97026614/7c43b14d-eb07-49ce-a214-7a61f9110750">
 
-<img height="500" src="https://github.com/TOILmodular/MARBLES/assets/97026614/c3b3ed1f-a07a-4fbe-bb6a-ef1d79c39ea7">
-<img height="500" src="https://github.com/TOILmodular/MARBLES/assets/97026614/d2da3a90-14d9-481f-9295-dc352d7ed93e">
+<img height="500" src="https://github.com/TOILmodular/MARBLES/assets/97026614/68dcdcdb-f269-4342-8198-e0ba8f067db5">
+<img height="500" src="https://github.com/TOILmodular/MARBLES/assets/97026614/246b8f7c-51aa-43aa-b566-f3ff96945356">
 
 ## Module Build and PCBs
 There are two different versions for the control board, an "original" and a "Thonk" version. Reason is that for my own module, I am using specific potentiometers - 16K4 series from Supertech Electronics - and 3.5mm jack sockets - MJ-355 from Marushin - available at my local electronics shop.
 
-<img width="300" alt="Marbles_CtrlBoardPCB_Orig" src="https://github.com/TOILmodular/MARBLES/assets/97026614/6c3a6cba-d98a-4723-a0a5-a77be741c8ad">
+<img width="300" alt="Marbles_CtrlBoardPCB_Orig" src="https://github.com/TOILmodular/MARBLES/assets/97026614/e1b48a03-b0a1-45ba-ae6c-539c568768b0">
 
 However, since most DIY projects for Eurorack modules out there are using potentiometers from ALPHA and so-called THONKICONN jacks, as they are provided by Thonk in the UK, I also created another control board PCB for the version "Thonk" with footprints for those components.
 
-<img width="300" alt="Marbles_CtrlBoardPCB_Thonk" src="https://github.com/TOILmodular/MARBLES/assets/97026614/3ab0e54d-33cf-4dd3-9738-83ef58379b9f">
+<img width="300" alt="Marbles_CtrlBoardPCB_Thonk" src="https://github.com/TOILmodular/MARBLES/assets/97026614/fff32ecc-1089-4aa4-b18a-9a4ef8cedd3e">
 
 The layout of the main PCB is sligthly different for each version. I needed to move the gate and CV output LED locations, due to the different shape of the jack sockets. Please make sure to use the right control and main board PCBs.
 
-<img width="300" alt="Marbles_MainBoardPCB" src="https://github.com/TOILmodular/MARBLES/assets/97026614/2f680753-b9bb-47d0-bcfd-9a101fb4d7d5">
+<img width="300" alt="Marbles_MainBoardPCB" src="https://github.com/TOILmodular/MARBLES/assets/97026614/03fac540-ce6f-43c9-8b48-698aff692b23">
 
 I created the Gerber files with the online tool EasyEDA and ordered it at JLCPCB.
 
@@ -49,7 +49,7 @@ The main PCB contains connection points for both connector types for programming
 
 Besides that, there are two connection points for putting the chip into boot mode, which is needed for loading the bootloader file. Just solder a 1x2 pin with standard 2.54mm distance to connection points labeled "BOOT". For activating the boot mode, place a jumper onto the pins. As soon as the bootloder is uploaded, remove the jumper to put the chip into operation mode, so the main code can be uploaded.
 
-<img width="300" src="https://github.com/TOILmodular/MARBLES/assets/97026614/5aa7d427-7079-4ae4-b69d-208d0d85aa70">
+<img width="300" src="https://github.com/TOILmodular/MARBLES/assets/97026614/ab59a136-bf83-43a7-a583-e7ac8bfa90cb">
 
 If you want to see more about the chip programming process, you can check out [this YouTube video](https://youtu.be/9D4ZEAn3BBg) for my Plaits DIY clone, as the procedure is the same.
 
@@ -120,7 +120,7 @@ IMPORTANT!!! Do not forget to put an "***f***" at the end of each of those value
 
 Example (green part are the added lines):
 
-<img width="300" src="https://github.com/TOILmodular/MARBLES/assets/97026614/9852c6d0-8c07-48d2-b2e3-7af8f8d56e8b">
+<img width="300" src="https://github.com/TOILmodular/MARBLES/assets/97026614/ead3d160-1677-4581-8778-772849e0ff39">
 
 ### ADC Calibration
 1. Disconnect all cables and long-press the buttons for the Clock Range (button B) and the CV Range (button J).
