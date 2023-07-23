@@ -60,7 +60,7 @@ As stated above, for the compiling options, either check the [Mutable Instrument
 
 Furthermore, for calibrating Marbles you will need a high-precision multimeter. Mutable Instruments recommends a device capable of 50,000 counts. I used a 40,000 count device.
 
-The below procedure is also demonstrated in my [YouTube video](xxx).
+The below procedure is also demonstrated in my [YouTube video](https://youtu.be/d1dFJfD5AMo).
 
 ### Measuring X1-X3 CV Outputs
 1. Set the voltage range (button J in the MI manual) to +5V (orange LED).
