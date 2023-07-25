@@ -59,4 +59,4 @@ Coordinates origin is the lower left corner of the panel.
 
 *) Y-coordinate = 21 for "original" design. Y-coordinate = 23 for "Thonk" design.
 
-<img height="1200" src="https://github.com/TOILmodular/MARBLES/assets/97026614/309c06f6-7cbf-4fa3-8d1e-0553ffbe5fe4">
+<img height="1200" src="https://github.com/TOILmodular/MARBLES/assets/97026614/c77d0bc2-0eea-48b1-85d0-ef07512f84f9">
