@@ -41,6 +41,7 @@
 | Op Amp | OPA4171 | 1 | SMD (14-SOIC) |
 | DAC | DAC8164 | 1 | SMD (16-TSSOP) |
 | Microcontroller | STM32F405RGT6 or STM32F405RGT7 | 1 | SMD (LQFP64) |
+| Oscillator Crystal | 8MHz	| 1	| leg distance 4.8mm |
 | Voltage Regulator | LD2981ABU33 | 1 | SMD (SOT-89-3) |
 | Voltage Regulator | R-78E3.3-0.5 | 1 | |
 | Voltage Regulator | LM4040B10 | 1 | SMD (SOT-23) |
