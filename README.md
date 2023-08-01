@@ -123,8 +123,12 @@ Example (green part are the added lines):
 <img width="300" src="https://github.com/TOILmodular/MARBLES/assets/97026614/ead3d160-1677-4581-8778-772849e0ff39">
 
 ### ADC Calibration
-1. Disconnect all cables and long-press the buttons for the Clock Range (button B) and the CV Range (button J).
-2. Input 1V (e.g. from a calibrated keyboard) into the Spread CV.
-3. Press  one of the 2 buttons B or J.
-4. Input 3V into the Spread CV.
-5. Press the button again. 
+1. Disconnect all cables and long-press the buttons for the Clock Range (button B) and the CV Range (button J). The Clock Range LED will blink green.
+2. Input 1V (e.g. from a calibrated keyboard) into the Rate CV.
+3. Press  one of the 2 buttons B or J. The Clock Range LED will blink orange.
+4. Input 3v into the Rate CV.
+5. Press the button again. The CV Range LED will blink green.
+6. Input 1V into the Spread CV.
+7. Press the button again. The CV Range LED will blink orange.
+8. Input 3V into the Spread CV.
+9. Press the button again.
