@@ -54,7 +54,7 @@ Besides that, there are two connection points for putting the chip into boot mod
 If you want to see more about the chip programming process, you can check out [this YouTube video](https://youtu.be/9D4ZEAn3BBg) for my Plaits DIY clone, as the procedure is the same.
 
 ## Calibration
-Calibrating Marbles is more complex than the process for other Mutable Instruments modules. It requires to adjust and recompile the source code. That is the reason, why I did not provide the compiled .hex files for this module here, as I did for other Mutable Instruments clones.
+Calibrating Marbles is more complex than the process for other Mutable Instruments modules. It requires to adjust and recompile the source code. The compiled .hex files for this module here are only for getting the module to work, so the actual calibration can be performed.
 
 As stated above, for the compiling options, either check the [Mutable Instruments documentation](https://pichenettes.github.io/mutable-instruments-documentation/modules/marbles/open_source/) or my repository [MI_FIRMWARE_COMPILING](https://github.com/TOILmodular/MI_FIRMWARE_COMPILING).
 
