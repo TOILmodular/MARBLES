@@ -1,5 +1,8 @@
 ## Panel Layout for PCB
 
+The panel dimensions provided in the section "Original Design" below are based on my own module build, since I am not following the standard HP (1HP eq. 5.08mm) size. An alternative by building an HP-standard size panel can be found in the section "HP Standard Design" further below.
+
+### Original Design
 Coordinates given in the table fit to the layout of components given in the PCBc in folder GerberFiles.
 The layout is slightly different for both versions due to different positions of the output LEDs. Details are given in the coordinates table below.
 
@@ -60,3 +63,20 @@ Coordinates origin is the lower left corner of the panel.
 *) Y-coordinate = 21 for "original" design. Y-coordinate = 23 for "Thonk" design.
 
 <img height="1200" src="https://github.com/TOILmodular/MARBLES/assets/97026614/c77d0bc2-0eea-48b1-85d0-ef07512f84f9">
+
+### HP Standard Design
+For building the panel with a size following the HP standard, you can use the panel Gerber files provided in the folder "GerberFiles".
+
+There are two versions ("Orig" and "Thonk"), since the positions of some of the LEDs are slightly different, due to the jack size difference for the two versions.
+
+I ordered my own panel via such gerber file built out of PCB material.
+
+Here are a few parameters of the panel.
+| Parameter | Value |
+| --- | --- |
+| Width | 18HP |
+| Pot hole diameter | 8mm |
+| Jack hole diameter | 6.1mm |
+| Tact switch hole diameter | 5.1 mm |
+| LED hole diameter | 3.1mm|
+| Mounting hole diameter | 3.2mm|
