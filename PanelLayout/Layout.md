@@ -78,5 +78,6 @@ Here are a few parameters of the panel.
 | Pot hole diameter | 8mm |
 | Jack hole diameter | 6.1mm |
 | Tact switch hole diameter | 5.1 mm |
-| LED hole diameter | 3.1mm|
+| LED hole diameter for X and T Deja-vu, external sampling, T and X outputs | 3.1mm|
+| LED hole diameter for X and T modes, clock range, CV range | 5.1mm|
 | Mounting hole diameter | 3.2mm|
