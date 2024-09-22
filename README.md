@@ -75,7 +75,7 @@ The below procedure is also demonstrated in my [YouTube video](https://youtu.be/
 6. Observe the output voltage, while turning the X-side "Bias" knob, until you are as close to 1V as possible (typically a value between 0.9V and 1V).
 7. Write down the exact voltage measured. Let's call it X11V (1V for output X1). Ideally, that would be a value with 4 digits.
 8. Repeat steps 7 and 8 for 3V. Let's call that measured value X13V (3V for output X1).
-9. Repeat steps 7 to 9 for X2 and V3, so you get values X21V, X23V, X31V, X33V.
+9. Repeat steps 7 to 9 for X2 and X3, so you get values X21V, X23V, X31V, X33V.
 
 ### Measuring Y CV Output
 1. Keep pressing the X mode button (N), while turning the "Spread" knob fully counter-clockwise.
